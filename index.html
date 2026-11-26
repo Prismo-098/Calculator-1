@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pop Calculator</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Bangers&family=Dela+Gothic+One&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="bg" aria-hidden="true"></canvas>
+<main class="calc" aria-label="Calculator">
+  <div class="top"><span class="brand">呪力 CALC<i class="solar"></i></span><button class="mute" id="mute" aria-pressed="false">Sound on</button></div>
+  <div class="lcd" id="lcd" role="status" aria-live="polite">
+    <div class="hist" id="hist"></div>
+    <div class="val" id="val">0</div>
+  </div>
+  <div class="pad" id="pad">
+    <button class="k fn" data-k="AC">C</button>
+    <button class="k fn" data-k="⌫">✕</button>
+    <button class="k fn" data-k="%">%</button>
+    <button class="k op" data-k="÷">÷</button>
+    <button class="k" data-k="7">7</button><button class="k" data-k="8">8</button><button class="k" data-k="9">9</button>
+    <button class="k op" data-k="×">×</button>
+    <button class="k" data-k="4">4</button><button class="k" data-k="5">5</button><button class="k" data-k="6">6</button>
+    <button class="k op" data-k="−">−</button>
+    <button class="k" data-k="1">1</button><button class="k" data-k="2">2</button><button class="k" data-k="3">3</button>
+    <button class="k op" data-k="+">+</button>
+    <button class="k zero" data-k="0">0</button><button class="k" data-k=".">.</button>
+    <button class="k eq" data-k="=">=</button>
+  </div>
+  
+</main>
+<script src="script.js"></script>
+</body>
+</html>
